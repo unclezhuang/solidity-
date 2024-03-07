@@ -1,0 +1,95 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_x",
+						"type": "uint256"
+					}
+				],
+				"name": "set",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"custom:custom": "自定义的描述/这是实验的测试合约",
+			"details": "提供了存储方法和获取方法",
+			"kind": "dev",
+			"methods": {
+				"get()": {
+					"details": "检索状态变量 storedData 的值",
+					"returns": {
+						"_0": "储存值"
+					}
+				},
+				"set(uint256)": {
+					"details": "将数字存储在状态变量 `storedData` 中",
+					"params": {
+						"_x": "要存储的新值"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"get()": {
+					"notice": "返回储存的值"
+				},
+				"set(uint256)": {
+					"notice": "存储 `_x`。"
+				}
+			},
+			"notice": "演示合约",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/tinyStorage.sol": "TinyStorage"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/tinyStorage.sol": {
+			"keccak256": "0xc26062d61d7cdee65cd461392800f031c22565680bb20e5ea460ba884edceea2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9aa16fc79eac870ec4a2812596a3b8bd2a584d607bf390940c1fda9a26dad4f6",
+				"dweb:/ipfs/QmTpD1xwWKQJYRJHhL8PtBbYELjh21Qeu3jaAbzfpUDiZR"
+			]
+		}
+	},
+	"version": 1
+}
