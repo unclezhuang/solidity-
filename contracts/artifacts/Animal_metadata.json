@@ -7,33 +7,26 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "fn1",
+				"name": "interfaceID",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "bytes4",
 						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "fn2",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
+						"type": "bytes4"
 					}
 				],
 				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "fn3",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "test",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -41,20 +34,20 @@
 						"type": "string"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "message",
+				"name": "testA",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -71,7 +64,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/hellow.sol": "Hello"
+			"contracts/interface.sol": "Animal"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -85,12 +78,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/hellow.sol": {
-			"keccak256": "0x94f928fe56ab6f72f7b1f5f58f741864dc0d2e478f151c80e6138dc5defaf6cb",
+		"contracts/interface.sol": {
+			"keccak256": "0x65a7453b59bbcb103ba77d3f2f1083643deadbfab7ad38fcfdb43cc62b2c61d7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://210a94d89e74b441c58acde3666f0ca0890dc27f062f784eb9dcbe46f89e04c7",
-				"dweb:/ipfs/QmdXUhBxi7kGLP1uD1Y618bUkA3wEjBCAvydHbBgnyoXBc"
+				"bzz-raw://b66dc4633f08217878c4144453a804cf5b8022f4882d308bcfc95d7a000d1ac6",
+				"dweb:/ipfs/QmTSHpcvMHWFui6RUVKQqYM1t7fBMpHhpjWPHHv4zZ3qJf"
 			]
 		}
 	},
